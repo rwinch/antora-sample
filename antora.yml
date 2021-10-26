@@ -2,6 +2,8 @@ title: Java Project
 name: java-project
 version: '1.0'
 start_page: ROOT:index.adoc
+nav:
+  - modules/ROOT/nav.adoc
 asciidoc:
   attributes:
     spring_boot_version: 2.3.0.RELEASE
