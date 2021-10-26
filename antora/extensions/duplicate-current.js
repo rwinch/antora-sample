@@ -2,8 +2,8 @@
 
 module.exports.register = (pipeline, { playbook, config }) => {
 
-    pipeline.on('contentAggregated',  ({contentAggregate}) => {
-        contentAggregate.forEach(ca => {
+    pipeline.on('contentClassified',  ({contentCatalog}) => {
+        contentCatalog.getComponents().forEach(ca => {
             out(ca);
         });
     });

@@ -4,12 +4,12 @@ site:
 content:
   sources:
     - url: ./
-      branches: HEAD
-urls:
-  latest_version_segment_strategy: redirect:to
-  latest_version_segment: current
-  latest_prerelease_version_segment: next
-  redirect_facility: static
+      branches: [HEAD, main]
+#urls:
+#  latest_version_segment_strategy: redirect:to
+#  latest_version_segment: current
+#  latest_prerelease_version_segment: next
+#  redirect_facility: static
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
