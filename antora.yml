@@ -1,0 +1,8 @@
+title: Java Project
+name: java-project
+version: '1.0'
+start_page: ROOT:index.adoc
+asciidoc:
+  attributes:
+    spring_boot_version: 2.3.0.RELEASE
+    hibernate_version: 5
