@@ -14,6 +14,6 @@ ui:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
 
-#pipeline:
-#  extensions:
-#    - require: ./antora/extensions/duplicate-current.js
+pipeline:
+  extensions:
+    - require: ./antora/extensions/root-component-name.js
