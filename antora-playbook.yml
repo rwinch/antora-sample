@@ -3,8 +3,8 @@ site:
   start_page: generated:ROOT:index.adoc
 content:
   sources:
-    - url: ./
-      branches: HEAD
+    - url: https://github.com/spring-projects/spring-session
+      branches: [ main ]
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
