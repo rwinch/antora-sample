@@ -21,14 +21,12 @@ module.exports.register = (pipeline, { playbook, config }) => {
                 const newVersionSegment = ``
                 toAdd.src.version = newVersion
                 if (toAdd.out) {
-                    const dirname = toAdd.out.dirname
-                    toAdd.out.dirname = toAdd.out.dirname.replace(originalVersionSegment, newVersionSegment)
-                    toAdd.out.path = toAdd.out.path.replace(originalVersionSegment, newVersionSegment);
-                    toAdd.out.rootPath = '..';
+                    const newDirName = toAdd.out.dirname.replace(originalVersionSegment, newVersionSegment)
+                    const newPath = toAdd.out.path.replace(originalVersionSegment, newVersionSegment);
+                    toAdd.out = Object.assign({}, toAdd.out, { dirname : newDirName, path: newPath, rootPath : '..'});
                 }
                 if (toAdd.pub) {
-                    toAdd.pub.url = toAdd.pub.url.replace(originalVersionSegment, newVersionSegment);
-                    toAdd.pub.rootPath = '..';
+                    toAdd.pub = Object.assign({}, toAdd.pub, { url : toAdd.pub.url.replace(originalVersionSegment, newVersionSegment), rootPath : '..'});
                 }
                 contentCatalog.addFile(toAdd);
             });
