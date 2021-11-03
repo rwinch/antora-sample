@@ -8,6 +8,7 @@ module.exports.register = (pipeline, { config }) => {
         const rootComponentName = config.rootComponentName || 'ROOT'
         const rootComponentNameLength = rootComponentName.length
         contentCatalog.findBy({ component: rootComponentName }).forEach((file) => {
+            out(file);
             if (file.out) {
                 file.out.dirname = file.out.dirname.substr(rootComponentNameLength)
                 file.out.path = file.out.path.substr(rootComponentNameLength + 1)
