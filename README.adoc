@@ -1,0 +1,8 @@
+= Build
+
+[source,bash]
+----
+$ ./gradlew antora
+...
+$ google-chrome build/site/index.html
+----
