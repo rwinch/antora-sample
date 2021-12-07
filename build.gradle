@@ -7,5 +7,5 @@ antora {
     // default no version (current version)
     antoraVersion = "3.0.0-rc.1"
     // additional arguments (other than playbookFile) to pass to Antora. Default is emptyList
-    arguments = ["--fetch"]
+    arguments = ["--fetch", "-r", "lib/custom-listing.js"]
 }
