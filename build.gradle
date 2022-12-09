@@ -1,11 +1,9 @@
 plugins {
-    id "io.github.rwinch.antora" version "0.0.2"
+	id 'base'
+	id 'org.antora' version '1.0.0-alpha.3'
 }
 
 antora {
-    // default: "antora-playbook.yml"
-    // default no version (current version)
-    antoraVersion = "3.0.0-rc.1"
-    // additional arguments (other than playbookFile) to pass to Antora. Default is emptyList
-    arguments = ["--fetch"]
+    version = '3.2.0-alpha.2'
+	options = ['--clean', '--fetch', '--stacktrace']
 }
