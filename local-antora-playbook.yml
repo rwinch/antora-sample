@@ -5,9 +5,15 @@ content:
   - url: .
     branches: HEAD
 asciidoc:
+  extensions:
+    - '@springio/asciidoctor-extensions/code-import-extension'
+    - '@springio/asciidoctor-extensions/code-chomping-extension'
+    - '@springio/asciidoctor-extensions/code-folding-extension'
   attributes:
     page-pagination: ''
     hide-uri-scheme: '@'
+    import-java: 'example$docs-src/main/java'
+    chomp: default
 urls:
   latest_version_segment: ''
 ui:

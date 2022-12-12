@@ -1,6 +1,40 @@
 [[example]]
-= Hello
+= Example
 
-Uses World
+Import does not work for h1. I'm guessing that is because page-title is actually used as the id rather than the specified id, so perhaps I have something wrong here?
 
-include::example$docs-src/main/java/example/Main.java[]
+import::Main[]
+
+It does not work for page-title id either:
+
+
+import::PageTitle[]
+
+.Include for example id Works
+[,java]
+----
+include::example$docs-src/main/java/example/Main.java[tags=main,indent=0]
+----
+
+
+[[page-title]]
+== Page Title
+
+If it is not the h1 it works with page-title. I also do not see a warning that the same id is used twice.
+
+import::PageTitle[]
+
+[[example.hello]]
+== Example Hello
+
+This adds the code, but the attributes `[tags=main,indent=0]` do not appear to be used.
+
+import::Main[tags=main,indent=0]
+
+
+
+.Include Uses tags and indent
+[,java]
+----
+include::example$docs-src/main/java/example/hello/Main.java[tags=main,indent=0]
+----
