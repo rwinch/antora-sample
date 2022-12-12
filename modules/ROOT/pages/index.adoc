@@ -1,3 +1,6 @@
+[[example]]
 = Hello
 
 Uses World
+
+include::example$docs-src/main/java/example/Main.java[]
