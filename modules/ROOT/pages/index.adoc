@@ -1,3 +1,16 @@
 = Hello
 
 Uses World
+
+.`include::example$/a/Something.java[]`
+[source,java]
+----
+include::example$/a/Something.java[]
+----
+
+
+.`include::example$/a/b/../Something.java[]`
+[source,java]
+----
+include::example$/a/b/../Something.java[]
+----
