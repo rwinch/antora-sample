@@ -1,6 +1,6 @@
 plugins {
 	id 'base'
-	id 'org.antora' version '1.0.0-alpha.3'
+	id 'org.antora' version '1.0.0'
 }
 
 antora {
