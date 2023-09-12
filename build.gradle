@@ -6,4 +6,5 @@ plugins {
 antora {
     version = '3.2.0-alpha.2'
 	options = ['--clean', '--fetch', '--stacktrace']
+	dependencies = ['asciidoctor-kroki':'0.17.0']
 }

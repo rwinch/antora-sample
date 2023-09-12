@@ -4,9 +4,12 @@ content:
   sources:
   - url: .
 asciidoc:
+  extensions:
+    - 'asciidoctor-kroki'
   attributes:
     page-pagination: ''
     hide-uri-scheme: '@'
+    kroki-fetch-diagram: true
 urls:
   latest_version_segment_strategy: redirect:to
   latest_version_segment: ''
