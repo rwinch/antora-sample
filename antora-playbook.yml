@@ -3,6 +3,9 @@ git:
 content:
   sources:
   - url: .
+  - url: https://github.com/spring-cloud/spring-cloud-build/
+    start_path: docs/
+    branches: main
 asciidoc:
   attributes:
     page-pagination: ''

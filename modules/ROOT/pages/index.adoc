@@ -2,3 +2,4 @@
 
 Uses World
 
+include::cloud-build:ROOT:building.adoc[leveloffset=+1]
