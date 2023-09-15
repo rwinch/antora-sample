@@ -21,9 +21,6 @@
                         <option>--stacktrace</option>
                         <option>--fetch</option>
                     </options>
-                    <packages>
-                        <package>asciidoctor-kroki@0.17.0</package>
-                    </packages>
                     <environment>
                         <ALGOLIA_API_KEY>9d489079e5ec46dbb238909fee5c9c29</ALGOLIA_API_KEY>
                         <ALGOLIA_APP_ID>WB1FQYI187</ALGOLIA_APP_ID>

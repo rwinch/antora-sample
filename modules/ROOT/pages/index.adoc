@@ -2,8 +2,3 @@
 
 Uses World
 
-.PlantUML example
-[plantuml#diagAliceBob,alice-and-bob,svg,role=sequence]
-....
-alice -> bob
-....

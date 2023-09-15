@@ -4,8 +4,6 @@ content:
   sources:
   - url: .
 asciidoc:
-  extensions:
-    - 'asciidoctor-kroki'
   attributes:
     page-pagination: ''
     hide-uri-scheme: '@'
