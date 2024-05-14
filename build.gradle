@@ -4,6 +4,7 @@ plugins {
 }
 
 antora {
-    version = '3.2.0-alpha.2'
+    version = '3.2.0-alpha.4'
+	packages = ['@springio/antora-extensions':'latest']
 	options = ['--clean', '--fetch', '--stacktrace']
 }

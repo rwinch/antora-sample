@@ -2,6 +2,3 @@
 
 page
 
-xref:index.adoc#invalid[invalid anchor]
-
-xref:invalid.adoc[invalid adoc]

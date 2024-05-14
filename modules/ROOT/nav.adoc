@@ -1,2 +1,2 @@
-* xref:index.adoc[]
-* xref:another.adoc[]
+* xref::index.adoc[, role=external,window=_blank]
+* https://google.com[Search, role=google]

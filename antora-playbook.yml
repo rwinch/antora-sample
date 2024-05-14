@@ -1,3 +1,6 @@
+antora:
+  extensions:
+    - '@springio/antora-extensions/override-navigation-builder-extension'
 git:
   ensure_git_suffix: false
 content:
