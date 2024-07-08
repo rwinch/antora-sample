@@ -1,15 +1,19 @@
 antora:
   extensions:
-    - '@springio/antora-extensions/override-navigation-builder-extension'
+    - '@antora/collector-extension'
+    - '/home/rwinch/code/spring-io/antora-extensions/lib/root-attachments-extension.js'
 git:
   ensure_git_suffix: false
 content:
   sources:
   - url: .
+    branches: HEAD
 asciidoc:
   attributes:
     page-pagination: ''
     hide-uri-scheme: '@'
+  extensions:
+    - '/home/rwinch/code/spring-io/asciidoctor-extensions/lib/javadoc-extension.js'
 urls:
   latest_version_segment_strategy: redirect:to
   latest_version_segment: ''

@@ -1,3 +1,10 @@
 = Hello
 
-Uses World xref:attachment$index.html[hi]
+Uses World xref:attachment$theattached.html[hi]
+Uses World
+
+
+
+xref:attachment$api/java/org/springframework/security/core/Authentication.html[`Authentication`,roles=apiref]
+
+javadoc:org.springframework.security.core.Authentication[]

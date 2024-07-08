@@ -8,3 +8,10 @@ asciidoc:
   attributes:
     spring_boot_version: 2.3.0.RELEASE
     hibernate_version: 5
+ext:
+  collector:
+    run:
+      - command: 'mkdir -p build/generated-files/modules/ROOT/assets/attachments/api/java/org/springframework/security/core'
+      - command: 'touch build/generated-files/modules/ROOT/assets/attachments/api/java/org/springframework/security/core/Authentication.html'
+    scan:
+      dir: build/generated-files
