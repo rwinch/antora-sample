@@ -4,7 +4,14 @@ Uses World xref:attachment$theattached.html[hi]
 Uses World
 
 
+Use xref xref:attachment$api/java/org/springframework/security/core/Authentication.html[`Authentication`,roles=apiref]
 
-xref:attachment$api/java/org/springframework/security/core/Authentication.html[`Authentication`,roles=apiref]
+No attributes javadoc:org.springframework.security.core.Authentication[]
 
-javadoc:org.springframework.security.core.Authentication[]
+Annotation javadoc:org.springframework.security.core.Authentication[format=annotation]
+
+full javadoc:org.springframework.security.core.Authentication[format=full]
+
+Custom text javadoc:org.springframework.security.core.Authentication[Custom]
+
+Custom text with formatting javadoc:org.springframework.security.core.Authentication[Click `Authentication`]

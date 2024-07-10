@@ -1,7 +1,7 @@
 antora:
   extensions:
     - '@antora/collector-extension'
-    - '/home/rwinch/code/spring-io/antora-extensions/lib/root-attachments-extension.js'
+    - '/Users/rwinch/code/spring-io/antora-extensions/main/lib/root-attachments-extension.js'
 git:
   ensure_git_suffix: false
 content:
@@ -13,7 +13,7 @@ asciidoc:
     page-pagination: ''
     hide-uri-scheme: '@'
   extensions:
-    - '/home/rwinch/code/spring-io/asciidoctor-extensions/lib/javadoc-extension.js'
+    - '/Users/rwinch/code/spring-io/asciidoctor-extensions/main/lib/javadoc-extension.js'
 urls:
   latest_version_segment_strategy: redirect:to
   latest_version_segment: ''
