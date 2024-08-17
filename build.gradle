@@ -1,0 +1,8 @@
+plugins {
+    id 'base'
+    id 'org.antora' version '1.0.0'
+}
+
+antora {
+    options = [clean: true, fetch: true, stacktrace: true]
+}

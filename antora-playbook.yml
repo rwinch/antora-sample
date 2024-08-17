@@ -1,11 +1,28 @@
+antora:
+  extensions:
+    - require: '@antora/collector-extension'
 site:
-  title: Project
-  start_page: generated:ROOT:index.adoc
+  title: Spring Framework
+  url: https://docs.spring.io/spring-framework/reference
+  robots: allow
+git:
+  ensure_git_suffix: false
 content:
   sources:
-    - url: ./
-      branches: HEAD
-      tags: 6.0.23
+    - url: https://github.com/spring-projects/spring-framework
+      # Refname matching:
+      # https://docs.antora.org/antora/latest/playbook/content-refname-matching/
+      branches: ['6.0.x']
+      tags: ['v6.0.23']
+      start_path: framework-docs
+asciidoc:
+  extensions:
+    - '@asciidoctor/tabs'
+    - '@springio/asciidoctor-extensions'
+    - '@springio/asciidoctor-extensions/include-code-extension'
+runtime:
+  log:
+    failure_level: warn
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
