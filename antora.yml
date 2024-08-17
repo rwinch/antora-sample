@@ -1,6 +1,7 @@
 title: Java Project
 name: java-project
-version: '1.0'
+version: '6.0.23'
+prerelease: '-SNAPSHOT'
 start_page: ROOT:index.adoc
 nav:
   - modules/ROOT/nav.adoc
