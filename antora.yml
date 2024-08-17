@@ -12,7 +12,6 @@ asciidoc:
 ext:
   collector:
     run:
-      command: gradlew tasks
-      local: true
+      command: echo 'nothing'
     scan:
       dir: ./build/generated-antora-resources

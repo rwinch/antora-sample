@@ -14,11 +14,7 @@ content:
       # https://docs.antora.org/antora/latest/playbook/content-refname-matching/
       branches: ['6.0.x']
       tags: ['v6.0.23']
-asciidoc:
-  extensions:
-    - '@asciidoctor/tabs'
-    - '@springio/asciidoctor-extensions'
-    - '@springio/asciidoctor-extensions/include-code-extension'
+      start_path: framework-docs
 runtime:
   log:
     failure_level: warn
