@@ -1,7 +1,6 @@
 title: Java Project
 name: java-project
-version: '6.0.23'
-prerelease: '-SNAPSHOT'
+version: '1.0.23'
 start_page: ROOT:index.adoc
 nav:
   - modules/ROOT/nav.adoc
@@ -9,9 +8,3 @@ asciidoc:
   attributes:
     spring_boot_version: 2.3.0.RELEASE
     hibernate_version: 5
-ext:
-  collector:
-    run:
-      command: echo 'nothing'
-    scan:
-      dir: ./build/generated-antora-resources
