@@ -9,3 +9,10 @@ asciidoc:
   attributes:
     spring_boot_version: 2.3.0.RELEASE
     hibernate_version: 5
+ext:
+  collector:
+    run:
+      command: gradlew tasks
+      local: true
+    scan:
+      dir: ./build/generated-antora-resources

@@ -9,12 +9,11 @@ git:
   ensure_git_suffix: false
 content:
   sources:
-    - url: https://github.com/spring-projects/spring-framework
+    - url: ./
       # Refname matching:
       # https://docs.antora.org/antora/latest/playbook/content-refname-matching/
       branches: ['6.0.x']
       tags: ['v6.0.23']
-      start_path: framework-docs
 asciidoc:
   extensions:
     - '@asciidoctor/tabs'
