@@ -1,30 +1,11 @@
-antora:
-  extensions:
-    - require: '@antora/collector-extension'
 site:
-  title: Spring Framework
-  url: https://docs.spring.io/spring-framework/reference
-  robots: allow
-git:
-  ensure_git_suffix: false
+  title: Docs Site
+  start_page: project-name::index.adoc
 content:
   sources:
-    - url: ./
-      # Refname matching:
-      # https://docs.antora.org/antora/latest/playbook/content-refname-matching/
+    - url: .
       branches: HEAD
-runtime:
-  log:
-    failure_level: warn
-asciidoc:
-  attributes:
-    tabs-sync-option: '@'
-    include-java: example$src/java/main
-    include-kotlin: example$src/kotlin/main
-  extensions:
-    - '@asciidoctor/tabs'
-    - '/Users/rwinch/code/spring-io/asciidoctor-extensions/main/lib/include-code-extension.js'
 ui:
   bundle:
-    url: https://github.com/spring-io/antora-ui-spring/releases/download/v0.4.16/ui-bundle.zip
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true

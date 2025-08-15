@@ -2,8 +2,5 @@
 
 Test it
 
-include-code::foo[sync-group-id=snippet]
-
-
-
-include-code::foo[sync-group-id=snippet2]
+* xref:attachment$with-extension.html[with extension]
+* xref:attachment$no-extension[no extension]
