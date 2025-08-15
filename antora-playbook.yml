@@ -12,12 +12,19 @@ content:
     - url: ./
       # Refname matching:
       # https://docs.antora.org/antora/latest/playbook/content-refname-matching/
-      branches: ['1.0.x']
-      tags: ['v1.0.23']
+      branches: HEAD
 runtime:
   log:
     failure_level: warn
+asciidoc:
+  attributes:
+    tabs-sync-option: '@'
+    include-java: example$src/java/main
+    include-kotlin: example$src/kotlin/main
+  extensions:
+    - '@asciidoctor/tabs'
+    - '/Users/rwinch/code/spring-io/asciidoctor-extensions/main/lib/include-code-extension.js'
 ui:
   bundle:
-    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    url: https://github.com/spring-io/antora-ui-spring/releases/download/v0.4.16/ui-bundle.zip
     snapshot: true

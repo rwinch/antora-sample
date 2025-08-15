@@ -1,0 +1,45 @@
+= Hello
+:tabs-sync-option:
+
+== 1
+
+[tabs,sync-group-id=group-1]
+====
+Tab A:: Triggers selection of Tab A in second tabset.
+Tab B:: Triggers selection of Tab B in second tabset.
+====
+
+[tabs,sync-group-id=group-1]
+====
+Tab A:: Triggers selection of Tab A in first tabset.
+Tab B:: Triggers selection of Tab B in first tabset.
+====
+
+== 2
+
+[tabs,sync-group-id=group-2]
+====
+Tab A:: Triggers selection of Tab A in fourth tabset.
+Tab B:: Triggers selection of Tab B in fourth tabset.
+====
+
+[tabs,sync-group-id=group-2]
+====
+Tab A:: Triggers selection of Tab A in third tabset.
+Tab B:: Triggers selection of Tab B in third tabset.
+====
+
+
+== default
+
+[tabs]
+====
+Tab A:: Triggers selection of Tab A in fourth tabset.
+Tab B:: Triggers selection of Tab B in fourth tabset.
+====
+
+[tabs]
+====
+Tab A:: Triggers selection of Tab A in third tabset.
+Tab B:: Triggers selection of Tab B in third tabset.
+====
