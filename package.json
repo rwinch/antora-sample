@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "antora": "antora antora-playbook.yml"
+  },
+  "dependencies": {
+    "antora": "3.2.0-rc.2",
+    "@antora/assembler": "1.0.0-rc.8",
+    "@antora/html-single-extension": "1.0.0-rc.8"
+  }
+}

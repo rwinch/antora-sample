@@ -1,0 +1,31 @@
+= Antora Sample
+:toc:
+
+== Fails with Assembler
+
+----
+npm install
+npx antora antora-playbook.yml --stacktrace
+[15:19:27.221] FATAL (antora): Jail is not an absolute path: modules/ROOT/pages
+    Cause: SecurityError
+        at Opal.send (/Users/rwinch/code/rwinch/antora-sample/assembler-include-code-jail/node_modules/asciidoctor-opal-runtime/src/opal.js:1671:19)
+        at constructor.$$exception (/Users/rwinch/code/rwinch/antora-sample/assembler-include-code-jail/node_modules/asciidoctor-opal-runtime/src/opal.js:4993:14)
+        at constructor.$$raise (/Users/rwinch/code/rwinch/antora-sample/assembler-include-code-jail/node_modules/asciidoctor-opal-runtime/src/opal.js:4681:31)
+        at constructor.$$system_path (/Users/rwinch/code/rwinch/antora-sample/assembler-include-code-jail/node_modules/@asciidoctor/core/dist/node/asciidoctor.js:13070:18)
+        at constructor.$$normalize_system_path (/Users/rwinch/code/rwinch/antora-sample/assembler-include-code-jail/node_modules/@asciidoctor/core/dist/node/asciidoctor.js:5700:37)
+        at constructor.$$resolve_include_path (/Users/rwinch/code/rwinch/antora-sample/assembler-include-code-jail/node_modules/@asciidoctor/core/dist/node/asciidoctor.js:14845:26)
+        at constructor.$$preprocess_include_directive (/Users/rwinch/code/rwinch/antora-sample/assembler-include-code-jail/node_modules/@asciidoctor/core/dist/node/asciidoctor.js:14482:21)
+        at constructor.$$process_line (/Users/rwinch/code/rwinch/antora-sample/assembler-include-code-jail/node_modules/@asciidoctor/core/dist/node/asciidoctor.js:14268:37)
+        at constructor.$$peek_line (/Users/rwinch/code/rwinch/antora-sample/assembler-include-code-jail/node_modules/@asciidoctor/core/dist/node/asciidoctor.js:13450:38)
+        at Opal.send (/Users/rwinch/code/rwinch/antora-sample/assembler-include-code-jail/node_modules/asciidoctor-opal-runtime/src/opal.js:1671:19)
+----
+
+== Succeeds without Assembler
+
+Running the same content with `antora-playbook-no-assembler.yml` (identical,
+minus the `@antora/html-single-extension` entry) succeeds:
+
+----
+npx antora antora-playbook-no-assembler.yml --stacktrace
+----
+

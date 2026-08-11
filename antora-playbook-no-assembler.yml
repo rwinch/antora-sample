@@ -1,7 +1,3 @@
-antora:
-  extensions:
-    - require: '@antora/html-single-extension'
-      config_file: ./antora-assembler-html-single.yml
 site:
   title: Docs
   url: https://example.com/docs

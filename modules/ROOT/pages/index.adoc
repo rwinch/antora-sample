@@ -1,3 +1,5 @@
-= Hello
+= Index
 
-Uses World
+include-partial::fragment.adoc[]
+
+include::partial$fragment.adoc[]
